@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "CI-2700"
 title_separator          : "-"
 name                     : "Markus Eger"
 description              : "CI-2700 - Creacion de videojuegos - course website"
