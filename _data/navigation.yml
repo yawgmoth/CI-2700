@@ -4,9 +4,9 @@ main:
     url: /
   - title: "Lecture Notes"
     url: /slides
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
+  - title: "Project"
+    url: /project
+  #- title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
