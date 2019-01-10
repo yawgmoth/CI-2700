@@ -29,6 +29,21 @@ permalink: /slides/lecture4.html
       .medium li {  font-size: 1.1em; }
       
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      
+      .left-column {
+        color: #777;
+        width: 20%;
+        height: 92%;
+        float: left;
+      }
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 75%;
+        float: right;
+        padding-top: 1em;
+      }
     </style>
   </head>
   <body>
@@ -79,6 +94,36 @@ A living, changing document containing
   * Another approach: Mention a unique idea/setting/mechanic
   
   * In practice, also: Argue using proven concepts
+  
+---
+
+# What's the pitch?
+
+<img src="/CI-2700/assets/img/tetris.gif" height="400px"/>
+
+---
+
+# What's the pitch?
+
+<img src="/CI-2700/assets/img/minecraft.jpg" width="90%"/>
+
+---
+
+# What's the pitch?
+
+<img src="/CI-2700/assets/img/portal2.jpg" width="90%"/>
+
+---
+
+# What's the pitch?
+
+<img src="/CI-2700/assets/img/mariokart.gif" width="90%"/>
+
+---
+
+# What's the pitch?
+
+<img src="/CI-2700/assets/img/guitar-hero.jpg" width="90%"/>
   
 ---
 
@@ -219,6 +264,51 @@ class: middle, center
 # For example
 
 ## <a href="/CI-2700/assets/pdf/GDD.pdf">Hoverrace</a>
+
+---
+
+class: small
+
+# From the design document to a game
+
+  * Like in software engineering, the design document tells you how to start implementing
+  
+  * Objects fall into three categories:
+  
+     - Objects with behavior (code)
+     
+     - Passive scene objects 
+     
+     - Abstract objects (buttons)
+     
+  * In Unity: Create a scene, and populate with objects 
+  
+  * Add behavior/code step by step
+  
+---
+
+class: small
+
+# Hoverrace scene 
+
+.left-column[ 
+  <img src="/CI-2700/assets/img/scene.png" width="50%"/>
+]
+
+.right-column[
+   
+* Player
+   
+* AI Opponent
+   
+* Checkpoints 
+   
+* Terrain, water
+   
+* UI
+   
+* etc
+]
 
 ---
 
