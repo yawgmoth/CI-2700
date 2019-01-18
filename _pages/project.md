@@ -10,7 +10,7 @@ categories: [frontpage]
 
 The main focus of the class is the project, which is worth 60% of the grade. The project consists of:
 
-  * A Design Document, due 20/1 by email to <a href="mailto:markus.eger.ucr@gmail.com">markus.eger.ucr@gmail.com</a>, worth 8% of the grade 
+  * A Design Document, due 20/1 by email to <a href="mailto:markus.eger.ucr@gmail.com">markus.eger.ucr@gmail.com</a>, worth 8% of the grade (example [here](/CI-2700/assets/pdf/GDD.pdf))
   * A Prototype submission, due 17/2, worth 20% of the grade 
   * The final product, due 27/2, worth 25% of the grade
   
