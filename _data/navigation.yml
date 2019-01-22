@@ -6,7 +6,7 @@ main:
     url: /slides
   - title: "Project"
     url: /project
-  - title: "Code samples"
+  - title: "Code Samples"
     url: /samples
   #- title: "Sample Posts"
   #   url: /year-archive/
