@@ -162,10 +162,19 @@ class: center, middle
 
 ## Get the demo project on <a href="https://github.com/yawgmoth/UnityTricks">github</a>
 
+---
+
+class: center, middle
+
+# Tomorrow: 3D Graphics
+
+<div id="container"></div>
+
 
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
     </script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
     <script type="text/javascript">
       var slideshow = remark.create({"highlightStyle": "dark"});
 
@@ -177,6 +186,76 @@ class: center, middle
       });
 
       MathJax.Hub.Configured();
+      
+      
+      function setupScene(width, height, element)
+    {       
+        const VIEW_ANGLE = 70;
+        const ASPECT = width / height;
+        const NEAR = 0.1;
+        const FAR = 10000;
+
+        // Get the DOM element to attach to
+        const rescontainer =
+            document.getElementById(element);
+       
+        const resrenderer = new THREE.WebGLRenderer();
+        const rescamera =
+            new THREE.PerspectiveCamera(
+                VIEW_ANGLE,
+                ASPECT,
+                NEAR,
+                FAR
+            );
+            
+        rescamera.position.z = 10;
+        const resscene = new THREE.Scene();
+        resscene.add(rescamera);
+        resrenderer.setSize(width, height);
+
+        
+        rescontainer.appendChild(resrenderer.domElement);
+
+        const respointLight =
+          new THREE.PointLight(0xFFFFFF, 3);
+
+        respointLight.position.x = 0;
+        respointLight.position.y = 1;
+        respointLight.position.z = 8;
+        resscene.add(respointLight);
+        var result = {scene: resscene, renderer: resrenderer, camera: rescamera, update: function (object) {} };
+        return result;
+    }
+      
+      
+    var cubeinfo = setupScene(window.innerWidth/2, window.innerHeight/2, "container");
+    cubeinfo.update = function ( object ) {
+            const timer = Date.now() * 0.0001;
+            if ( object.isMesh === true ) {
+                object.rotation.z = timer * 15;
+                object.rotation.x = timer * 22;
+            }
+        };
+        
+    var mesh = new THREE.Mesh(new THREE.BoxGeometry( 4, 4, 4 ), new THREE.MeshNormalMaterial());
+
+    cubeinfo.scene.add(mesh);
+    
+    function doUpdate(info)
+    {
+        info.scene.traverse(info.update);
+        info.renderer.render(info.scene, info.camera);
+    }
+
+    function update () {
+      // Draw!
+      doUpdate(cubeinfo);
+      // Schedule the next frame.
+      requestAnimationFrame(update);
+    }
+
+    // Schedule the first frame.
+    requestAnimationFrame(update);
     </script>
   </body>
 </html>
