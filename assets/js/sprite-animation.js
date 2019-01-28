@@ -216,12 +216,12 @@
 		ticksPerFrame: 20
 	});
     
-    animImage.src = "spriteframe.png"
-    mmImage.src = "spritesheet.png";
+    animImage.src = "/CI-2700/assets/img/spriteframe.png"
+    mmImage.src = "/CI-2700/assets/img/spritesheet.png";
 	
 	// Load sprite sheet
 	coinImage.addEventListener("load", gameLoop);
-	coinImage.src = "spritesheet.png";
+	coinImage.src = "/CI-2700/assets/img/spritesheet.png";
 
 } ());
 
