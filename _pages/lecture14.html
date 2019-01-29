@@ -440,7 +440,7 @@ $$
 
 $$
 a_2 \cdot c \cdot \cos(\beta) + b_2 \cdot c \cdot \sin(\beta) + c_2 = \\\\
-d cdot (\sin(\beta) \cos(\alpha) + \cos(\beta) \sin(\alpha))
+d \cdot (\sin(\beta) \cos(\alpha) + \cos(\beta) \sin(\alpha))
 $$
 
 ---
@@ -590,23 +590,23 @@ class: small
 
 <center>
 $$ \begin{pmatrix} 
-1 & 0 & 0 & \Delta x \\\\
-0 & 1 & 0 & \Delta y \\\\
-0 & 0 & 1 & \Delta z \\\\
+1 & 0 & 0 & \Delta x \\
+0 & 1 & 0 & \Delta y \\
+0 & 0 & 1 & \Delta z \\
 0 & 0 & 0 & 1
 \end{pmatrix}
 \cdot
 \begin{pmatrix} 
-x \\\\ 
-y \\\\ 
-z \\\\
+x \\ 
+y \\ 
+z \\
 1 
 \end{pmatrix} 
 = 
 \begin{pmatrix} 
-x + \Delta x \\\\
-y + \Delta y \\\\
-z + \Delta z \\\\
+x + \Delta x \\
+y + \Delta y \\
+z + \Delta z \\
 1 \end{pmatrix}
 $$
 </center>
@@ -701,7 +701,30 @@ class: small
 $$
 R = R_y \cdot R_x \cdot R_z
 $$
-  
+
+---
+
+class: small 
+
+# Practice
+
+What's the matrix that rotates an object by 60 degrees around the y axis, *after* it moves it `\(\sqrt{3}\:\:\)` units in the z direction?
+
+How does it change the vector v?
+
+$$
+\vec{v} = \begin{pmatrix} 
+1 \\\\
+1 \\\\
+0
+\end{pmatrix}
+$$
+
+Helpful:
+$$
+\sin(60) = \frac{\sqrt{3}}{2}, \cos(60) = \frac{1}{2}, \sqrt{3} \approx 1.73
+$$
+
 ---
 
 class: small 
