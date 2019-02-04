@@ -1,3 +1,7 @@
+---
+permalink: /slides/lecture17.html
+---
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -83,7 +87,7 @@ class: center, middle
 
 # Pacman 
 
-<img src="pacman.png" width="50%"/>
+<img src="/CI-2700/assets/img/pacman.png" width="50%"/>
 
 ---
 
@@ -121,7 +125,7 @@ Some disclaimers:
 
 # Pacman Ghost AI: The maze 
 
-<img src="pacmanmaze.png" width="50%"/>
+<img src="/CI-2700/assets/img/pacmanmaze.png" width="50%"/>
 
 ---
 
@@ -157,7 +161,7 @@ Some disclaimers:
   
   * Instead, before an intersection, they look at the next cell in each direction, and pick the direction that is closest to the target
   
-<img src="ghostdecision.png" width="80%"/>
+<img src="/CI-2700/assets/img/ghostdecision.png" width="80%"/>
 
 ---
 
@@ -167,7 +171,7 @@ What is the problem with this approach?
 
 --
 
-<img src="cantreach.png" width="80%"/>
+<img src="/CI-2700/assets/img/cantreach.png" width="80%"/>
 
 ---
 
@@ -185,19 +189,19 @@ What is the problem with this approach?
 
 # What can we do?
 
-<img src="pacmanmaze.png" width="50%"/>
+<img src="/CI-2700/assets/img/pacmanmaze.png" width="50%"/>
 
 ---
 
 # What can we do?
 
-<img src="mazenodes.png" width="50%"/>
+<img src="/CI-2700/assets/img/mazenodes.png" width="50%"/>
 
 ---
 
 # What can we do?
 
-<img src="mazegraph.png" width="50%"/>
+<img src="/CI-2700/assets/img/mazegraph.png" width="50%"/>
 
 ---
 
@@ -236,13 +240,13 @@ destination by being connected with edges. The cost is the sum of the costs of e
 
 # Another example: Romania 
 
-<img src="romania.png" width="100%"/>
+<img src="/CI-2700/assets/img/romania.png" width="100%"/>
 
 ---
 
 # How could we find a path?
 
-<img src="pathproblem.png" width="100%"/>
+<img src="/CI-2700/assets/img/pathproblem.png" width="100%"/>
 
 ---
 
@@ -266,13 +270,13 @@ class: small
 
 # Depth-First Search
 
-<img src="pathproblem.png" width="100%"/>
+<img src="/CI-2700/assets/img/pathproblem.png" width="100%"/>
 
 ---
 
 # Depth-First Search
 
-<img src="dfs/1.png" width="100%"/>
+<img src="/CI-2700/assets/img/dfs/1.png" width="100%"/>
 
 75
 
@@ -280,53 +284,53 @@ class: small
 
 # Depth-First Search
 
-<img src="dfs/2.png" width="100%"/>
+<img src="/CI-2700/assets/img/dfs/2.png" width="100%"/>
 75 + 71 = 146
 
 ---
 
 # Depth-First Search
 
-<img src="dfs/3.png" width="100%"/>
+<img src="/CI-2700/assets/img/dfs/3.png" width="100%"/>
 75 + 71 + 151 = 297
 
 ---
 
 # Depth-First Search
 
-<img src="dfs/4.png" width="100%"/>
+<img src="/CI-2700/assets/img/dfs/4.png" width="100%"/>
 75 + 71 + 151 + 99 = 396
 
 ---
 
 # Depth-First Search
 
-<img src="dfs/5.png" width="100%"/>
+<img src="/CI-2700/assets/img/dfs/5.png" width="100%"/>
 75 + 71 + 151 + 99 + 211 = 607
 
 ---
 
 # Depth-First Search: What if?
 
-<img src="dfs/reuse.png" width="100%"/>
+<img src="/CI-2700/assets/img/dfs/reuse.png" width="100%"/>
 
 ---
 
 # Depth-First Search: Revisiting nodes
 
-<img src="dfs/revisit.png" width="100%"/>
+<img src="/CI-2700/assets/img/dfs/revisit.png" width="100%"/>
 
 ---
 
 # Depth-First Search: What if?
 
-<img src="dfs/longway.png" width="100%"/>
+<img src="/CI-2700/assets/img/dfs/longway.png" width="100%"/>
 
 ---
 
 # Depth-First Search: Long way
 
-<img src="dfs/longwaysol.png" width="100%"/>
+<img src="/CI-2700/assets/img/dfs/longwaysol.png" width="100%"/>
 
 ---
 
@@ -346,26 +350,26 @@ class: small
   
 # Breadth-First Search
 
-<img src="pathproblem.png" width="100%"/>
+<img src="/CI-2700/assets/img/pathproblem.png" width="100%"/>
 
 ---
 
 # Breadth-First Search
 
-<img src="bfs/1.png" width="100%"/>
+<img src="/CI-2700/assets/img/bfs/1.png" width="100%"/>
 
 ---
 
 # Breadth-First Search
 
-<img src="bfs/2.png" width="100%"/>
+<img src="/CI-2700/assets/img/bfs/2.png" width="100%"/>
 
 
 ---
 
 # Breadth-First Search
 
-<img src="bfs/3.png" width="100%"/>
+<img src="/CI-2700/assets/img/bfs/3.png" width="100%"/>
 
 ---
 
@@ -443,7 +447,7 @@ class: tiny
 # Greedy Search
 
 <table><tr><td>
-<img src="pathproblem.png" width="90%"/></td><td> 
+<img src="/CI-2700/assets/img/pathproblem.png" width="90%"/></td><td> 
 Heuristic:<br/>
 <table>
 <tr><td>Arad</td><td>366</td></tr>
@@ -478,7 +482,7 @@ class: tiny
 # Greedy Search
 
 <table><tr><td>
-<img src="greedy/1.png" width="90%"/></td><td> 
+<img src="/CI-2700/assets/img/greedy/1.png" width="90%"/></td><td> 
 Heuristic:<br/>
 <table>
 <tr><td>Arad</td><td>366</td></tr>
@@ -513,7 +517,7 @@ class: tiny
 # Greedy Search
 
 <table><tr><td>
-<img src="greedy/2.png" width="90%"/></td><td> 
+<img src="/CI-2700/assets/img/greedy/2.png" width="90%"/></td><td> 
 Heuristic:<br/>
 <table>
 <tr><td>Arad</td><td>366</td></tr>
@@ -548,7 +552,7 @@ class: tiny
 # Greedy Search
 
 <table><tr><td>
-<img src="greedy/3.png" width="90%"/></td><td> 
+<img src="/CI-2700/assets/img/greedy/3.png" width="90%"/></td><td> 
 Heuristic:<br/>
 <table>
 <tr><td>Arad</td><td>366</td></tr>
@@ -595,7 +599,7 @@ class: tiny
 # A* Search
 
 <table><tr><td>
-<img src="pathproblem.png" width="90%"/></td><td> 
+<img src="/CI-2700/assets/img/pathproblem.png" width="90%"/></td><td> 
 Heuristic:<br/>
 <table>
 <tr><td>Arad</td><td>366</td></tr>
@@ -630,7 +634,7 @@ class: tiny
 # A* Search
 
 <table><tr><td>
-<img src="as/1.png" width="90%"/></td><td> 
+<img src="/CI-2700/assets/img/as/1.png" width="90%"/></td><td> 
 Heuristic:<br/>
 <table>
 <tr><td>Arad</td><td>366</td></tr>
@@ -665,7 +669,7 @@ class: tiny
 # A* Search
 
 <table><tr><td>
-<img src="as/2.png" width="90%"/></td><td> 
+<img src="/CI-2700/assets/img/as/2.png" width="90%"/></td><td> 
 Heuristic:<br/>
 <table>
 <tr><td>Arad</td><td>366</td></tr>
@@ -700,7 +704,7 @@ class: tiny
 # A* Search
 
 <table><tr><td>
-<img src="as/3.png" width="90%"/></td><td> 
+<img src="/CI-2700/assets/img/as/3.png" width="90%"/></td><td> 
 Heuristic:<br/>
 <table>
 <tr><td>Arad</td><td>366</td></tr>
@@ -735,7 +739,7 @@ class: tiny
 # A* Search
 
 <table><tr><td>
-<img src="as/4.png" width="90%"/></td><td> 
+<img src="/CI-2700/assets/img/as/4.png" width="90%"/></td><td> 
 Heuristic:<br/>
 <table>
 <tr><td>Arad</td><td>366</td></tr>
@@ -770,7 +774,7 @@ class: tiny
 # A* Search
 
 <table><tr><td>
-<img src="as/5.png" width="90%"/></td><td> 
+<img src="/CI-2700/assets/img/as/5.png" width="90%"/></td><td> 
 Heuristic:<br/>
 <table>
 <tr><td>Arad</td><td>366</td></tr>
@@ -826,7 +830,7 @@ class: small
   
   * An AI could play the game using A*
   
-<img src="marioas.png" width="50%"/>
+<img src="/CI-2700/assets/img/marioas.png" width="50%"/>
   
 ---
 
