@@ -221,17 +221,11 @@ What is the problem with this approach?
 
 # The (undirected) Pathfinding problem
 
-Given a graph G = (V,E), with edge weights w, a start node `\( s \in V\:\: \)`, a destination node `\( d \in V\:\: \)`, find a sequence of vertices `\( v_1, v_2, \ldots, v_n \quad\; \)`, such that `\(v_1 = s,\: v_n = d \quad\;\;\)` and `\( \forall i: (v_i, v_{i+1}) \in E \)`
+Given a graph G = (V,E), with edge weights w, a start node `\( s \in V \)`, a destination node `\( d \in V \)`, find a sequence of vertices `\( v_1, v_2, \ldots, v_n  \)`, such that `\(v_1 = s, v_n = d \)` and `\( \forall i: (v_i, v_{i+1}) \in E \)`
 
-We call the sequence `\( v_1, v_2, \ldots, v_n \quad\; \)` a *path*, and the *cost* of the path is `\( \sum_i w((v_i,v_{i+1})) \)`
+We call the sequence `\( v_1, v_2, \ldots, v_n \)` a *path*, and the *cost* of the path is `\( \sum_i w((v_i,v_{i+1})) \)`
 
----
-
-# The (undirected) Pathfinding problem
-
-Given a graph G = (V,E), with edge weights w, a start node `\( s \in V\:\: \)`, a destination node `\( d \in V\:\: \)`, find a sequence of vertices `\( v_1, v_2, \ldots, v_n \quad\; \)`, such that `\(v_1 = s,\: v_n = d \quad\;\;\)` and `\( \forall i: (v_i, v_{i+1}) \in E \)`
-
-We call the sequence `\( v_1, v_2, \ldots, v_n \quad\; \)` a *path*, and the *cost* of the path is `\( \sum_i w((v_i,v_{i+1})) \)`
+--
 
 This means what you would expect: To find a path from a start node to a destination node means to find vertices to walk through that lead from the start to the 
 destination by being connected with edges. The cost is the sum of the costs of edges that need to be traversed.
