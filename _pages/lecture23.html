@@ -1,3 +1,7 @@
+---
+permalink: /slides/lecture23.html
+---
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -185,7 +189,7 @@ transform.position = transform.position +
 
 # Discretized Physics 
 
-<img src="forces.gif" width="90%"/>
+<img src="/CI-2700/assets/img/forces.gif" width="90%"/>
 
 ---
 
@@ -221,7 +225,7 @@ $$
 
 # Applying Torque 
 
-<img src="torque.png" width="100%"/>
+<img src="/CI-2700/assets/img/torque.png" width="100%"/>
 
 ---
 
@@ -249,7 +253,7 @@ class: small
   
   * The angle of their movement relative to the normal at the impact location determines their new movement 
   
-<img src="elastic.gif" width="60%"/>
+<img src="/CI-2700/assets/img/elastic.gif" width="60%"/>
 
 ---
 
@@ -349,14 +353,56 @@ One such force is gravity.
 
 ---
 
+class: small
+
 # Gravity 
 
-  * 
+  * Remember from earlier: The law of universal gravitation: Every two bodies attract each other with a force equal to the product of their masses divided by the square of their distance
+  
+  * Of course, most of the time these attractions don't matter 
+  
+  * Most gravitational forces are insignificant next to the one from earth 
+  
+  * So: Instead of modeling gravity physically correct, just add a force that goes "down"
+  
+  * Unless your game needs something else
+  
+---
+
+# Counterexample
+
+<img src="/CI-2700/assets/img/orbitalis.png" width="60%"/>
+
+(0rbitalis) 
 
 ---
 
 # Other forces
 
+  * Understanding the basics behind physics allows us to develop games that violate them in targeted ways
+ 
+  * Physics can make for very exciting game mechanics 
+  
+  * In addition to the forces we discussed, it's possible to include others, such as explosions, or magnetism 
+  
+  * Sometimes just playing with gravity can be fun
+  
+---
+
+class: small
+
+# Numerical Stability
+
+  * One problem with our simplified model of integration is numerical stability 
+  
+  * If our timesteps are not measured accurately, or there are floating point rounding errors, we may add more to the velocity than expected 
+  
+  * This problem compounds as the simulation continues
+  
+  * Ideally, you will have a low, constant physics update rate 
+  
+  * Problems happen if your simulation takes longer than the time between updates
+ 
 
 ---
 
@@ -378,6 +424,8 @@ class: small
    * [Learn Game Physics](https://www.gamedesigning.org/learn/game-physics/)
    
    * [Elastic Collision in 3D](http://exploratoria.github.io/exhibits/mechanics/elastic-collisions-in-3d/)
+   
+   * [Stable Rigid-body Physics](https://www.gamasutra.com/features/gdcarchive/2001/rhodes_paper.pdf)
 
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
