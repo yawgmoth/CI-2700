@@ -8,6 +8,8 @@ main:
     url: /project
   - title: "Code Samples"
     url: /samples
+  - title: "Student Games"
+    url: /games
   #- title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
